@@ -1,0 +1,108 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .container {
+    width: 360px;
+    height: 640px;
+    border: 1px solid #fff;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 40px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+    .groupInput {
+      .header {
+        h5 {
+          margin: 0;
+          font-size: 2.4rem;
+          line-height: 32px;
+          font-weight: 400;
+          color: #020303;
+        }
+        span {
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 16px;
+
+          letter-spacing: 0.4px;
+        }
+      }
+
+      .inputFiled {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .helperText {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 21px;
+        letter-spacing: 0.25px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 16px;
+        cursor: pointer;
+      }
+      .action {
+        margin-top: 16px;
+
+        .question {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          span {
+            margin-right: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.25px;
+          }
+
+          a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.1px;
+            color: #31c0f4;
+          }
+        }
+      }
+    }
+    .optionGroup {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+
+      .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.25px;
+      }
+
+      .icon {
+        margin-top: 10px;
+
+        i {
+          margin: 0 16px;
+          color: #3b5998;
+        }
+
+        i:first-child {
+        }
+
+        i:last-child {
+          color: #000;
+        }
+      }
+    }
+  }
+}

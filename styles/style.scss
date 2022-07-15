@@ -1,0 +1,65 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7a7a9d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #dde1ef;
+  border-radius: 3px;
+}
+
+// custom-progress
+
+.custom-progress {
+  .ant-progress-outer {
+    .ant-progress-inner {
+      background: rgba(255, 255, 255, 0.38);
+      .ant-progress-bg {
+        height: 4px !important;
+        background: #fff !important;
+      }
+    }
+  }
+}
+
+.ant-btn[disabled] {
+  &:hover {
+    background: transparent;
+  }
+  background: transparent;
+}
+
+.ant-input-affix-wrapper-focused {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.ant-input-affix-wrapper {
+  outline: none;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.ant-form-item-explain {
+  margin-top: 10px !important;
+}

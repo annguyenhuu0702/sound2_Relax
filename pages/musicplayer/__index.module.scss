@@ -1,0 +1,84 @@
+@import "../../styles/resonsive.module.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 420px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  @include mobile {
+    width: 100%;
+  }
+  .body {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    // @include mobile {
+    //   padding: 20px;
+    // }
+
+    .song_cover {
+      height: 328px;
+
+      background: url("https://s3-alpha-sig.figma.com/img/600f/9f5c/3c1f8cb050649632845b18ba82bc6f18?Expires=1658102400&Signature=MCV7UqKFM7PSZbpoQsi60h34xr6jZsf4dHArDlS2mJ3n7FBr~Z31HjuxlG-Y0RCYdJSzgHnk9xHPX~e6pXks-ZXBO-wkCS6ESicyvL~gdg7gfnkfF376K4KLEf0E1lMd11f0BkCpPMwOMrO-fyuQwI85rWxtd6Lh~6h9T7roL2xvu-A70k9x7t3VY53HoHNoX58Qw07MY7WBiZLaOAy8n3WlP1-ze5ejFrwgJg6Il2g62fLji-f23FLhKU~xpzoSkHo61AUsqOkswx-caHQhrfznnqIie63iETqsWhXdD1JKj2vzvjahkEw9p3DIT78wJxDe5wAJtVj-jiq9kEhGZg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA")
+        center center no-repeat;
+      background-size: cover;
+      filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.25)) drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.24));
+      // border-radius: 10px;
+    }
+    .song_name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+      .name {
+        h5 {
+          font-size: 2.4rem;
+          line-height: 32px;
+          color: #ffffff;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+        span {
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 24px;
+          text-align: center;
+          letter-spacing: 0.25px;
+          color: #ffffff;
+        }
+      }
+
+      .icon_like {
+        cursor: pointer;
+        i {
+          color: #ffffff;
+          font-size: 2rem;
+        }
+      }
+    }
+    .duration_bar {
+      .time {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(255, 255, 255, 0.38);
+      }
+    }
+
+    .play_control {
+      margin-top: 30px;
+      .control {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
